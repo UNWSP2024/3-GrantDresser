@@ -5,10 +5,17 @@
 # If the person is at least 13 years old, but less than 20 years old, it should display "teenager".
 # If the person is at least 20 year old, it should display "adult".
 
-def categorize_age(age):
+def categorize_age(personage):
     ageCategory = "TBD"
     ######################
-    # WRITE YOUR CODE HERE
+    if personage <= 1:
+        ageCategory = "infant"
+    elif personage > 1 and personage < 13:
+        ageCategory = "child"
+    elif personage >= 13 and personage < 20:
+        ageCategory = "teenager"
+    else:
+        ageCategory = "adult"
     ######################
 
 
